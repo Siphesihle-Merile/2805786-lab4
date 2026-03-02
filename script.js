@@ -1,4 +1,3 @@
-// 1. Grab all the HTML elements by their IDs
 const searchBtn = document.getElementById('search-btn');
 const countryInput = document.getElementById('country-input');
 const countryInfo = document.getElementById('country-info');
@@ -6,11 +5,9 @@ const borderSection = document.getElementById('bordering-countries');
 const spinner = document.getElementById('loading-spinner');
 const errorMsg = document.getElementById('error-message');
 
-// 2. Main function to search for a country
 async function searchCountry(countryName) {
     if (!countryName) return;
 
-    // Reset the UI for every new search
     errorMsg.textContent = '';
     errorMsg.classList.add('hidden');
     countryInfo.innerHTML = '';
