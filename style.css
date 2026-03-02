@@ -1,0 +1,37 @@
+.spinner {
+    background-color: burlywood;
+    text-decoration: solid;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.country-card{
+    background-color: darkgreen;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.border-grid {
+    display: grid;
+    background-color: darkgreen;
+    color: black;
+    text-align: center;
+
+}
+
+.error {
+    color: red;
+    text-align: center;
+    padding: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
